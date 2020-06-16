@@ -1,0 +1,24 @@
+body {
+    background: lightblue;
+}
+
+.container {
+    background: lightpink;
+    display: flex; /*enables flex display*/
+    flex-direction: row; /*store sub items in row */
+    flex-wrap: wrap; /* allow elements to wrap down when overflow on screen*/
+    justify-content: center; /*horizontal alignment*/
+    align-items: center; /*vertical alignment*/
+}
+
+.container-item {
+    background: white;
+    padding: 20px;
+    width: 50px;
+    text-align: center;
+    margin: 20px;
+    flex-grow: 1;
+    flex-shrink: 5;
+    flex-basis: 50px;
+    
+}

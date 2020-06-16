@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>webpage</title>
+</head>
+<body>
+    
+    <h1>hello world</h1>
+    <script>
+
+		//const must be initialised 
+		//let can't be be declared again once declared
+		//var has no restrictions which makes it more vulnerable to bugs
+
+		///////////////
+		//	arrays	///
+		///////////////
+
+		//let arr=[1,"hello",2.3,null,true,Symbol(),undefined];
+		//console.log(arr)
+		
+		//accessing multi dimentional array
+		//let arr=[[1,2,3] , [[4,5,6],7,8],9,10]
+		//console.log("arr[3] = " + arr[3]);
+		//console.log("arr[0][0] = "+arr[0][0])	
+		//console.log("arr[1][0][1] = "+arr[1][0][1])	
+		
+		
+		//manipulate array from end => push() , pop()
+		//manipulate array from begening => unshift() , shift()
+		//let arr1 = [2,3,4];
+		//arr1.push(5);		//2,3,4,5
+		//console.log(arr1.pop());	//2,3,4
+		//arr1.unshift(1);	//1,2,3,4
+		//console.log(arr1.shift()); 		//2,3,4
+		
+		//////////////////
+		//	functions	//
+		//////////////////
+		
+		/*
+		function fun1() {
+			console.log("this is a function");
+		}
+		fun1();
+		
+		function fun2(a,b) {
+			console.log(a+b);
+		}
+		fun2();
+		
+		function fun3(a,b){
+			return a+b;
+		}
+		fun3();
+		
+		var global=10;
+		console.log(global);
+		function fun4(){
+			var global="hero"
+			console.log(global);
+			newGlobal = "this also a global variable";
+			console.log(newGlobal);
+			
+		}
+		console.log(global);
+		console.log(newGlobal);
+		*/
+		
+		//////////////////////////////
+		//	conditional statements 	//
+		//////////////////////////////
+		
+		
+		let age="19";
+		if(age<18){
+			console.log("you can't vote");
+		}else if (age>=18) {
+			console.log("you are eligible to vote now");
+		}else {
+			console.log("something went wrong");
+		}
+		
+		
+		//notice here
+		
+		if(age===19) {
+			console.log("correct age")
+		}else {
+			console.log("what the hell is this");
+		}
+		
+		//switch case statements 
+		
+		let age1 = 10;
+		switch(age1) {
+		
+			case 'a':
+			case 'e':
+			case 'i':
+			case 'o':
+			case 'u':
+				console.log("it's a vowel");
+				break;
+			default : console.log("something unexpected ");
+				break;
+		
+		
+		} 
+		
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <style>
+        body {
+            /* animation: bg-animate 5s infinite; */
+            animation-name: bg-animate;
+            animation-duration: 4s;
+            animation-direction: alternate-reverse;
+            animation-iteration-count:infinite;
+            animation-timing-function: ease;
+        }
+        .btn-1 {
+            text-decoration: none;
+            border: 5px solid black;
+            padding: 20px 70px;
+            position: absolute;
+            top: 40%;
+            left: 40%;
+            color: black;
+            font-size: 200%;
+            background: chartreuse;
+            
+            transition: all 200ms linear;
+        }
+
+        .btn-1:hover{
+            background: black;
+            color: white;
+            border: 5px solid chartreuse;
+            transform: translate(0px,-5px);
+        }
+
+        @keyframes bg-animate {
+            0% {
+                background:white;
+            }
+            50% {
+                background: red;
+            }
+            100% {
+                background: blue;
+            }
+        }
+
+
+
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animations</title>
+</head>
+<body>
+    <a href="#" class="btn-1">click Me!</a>
+</body>
+</html>
