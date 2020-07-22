@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>manipulating dom</title>
+</head>
+<body>
+	<h1 class="header1">hello world</h1>
+	<h1 class="header1">hello world</h1>
+	<h1 class="header1">hello world</h1>
+
+	<button id="btn1" onclick="changeHeader()">click me</button>
+	<script type="text/javascript">
+
+		function changeHeader() {
+			console.log("hello world")
+			var list =(document.querySelectorAll(".header1"));
+			var another = Array.from(list)
+		}
+
+
+	</script>
+</body>
+</html>

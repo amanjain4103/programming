@@ -1,0 +1,4 @@
+
+.autoCompleteBoxContainer > ul > li:hover {
+    cursor: pointer;
+}
